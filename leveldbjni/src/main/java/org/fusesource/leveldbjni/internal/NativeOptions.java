@@ -66,7 +66,7 @@ public class NativeOptions {
     @JniField(cast="size_t")
     private long write_buffer_size = 4 << 20;
     @JniField(cast="size_t")
-    private long block_size = 4086;
+    private long block_size = 4 << 10;
     private int max_open_files = 1000;
     private int block_restart_interval = 16;
 
